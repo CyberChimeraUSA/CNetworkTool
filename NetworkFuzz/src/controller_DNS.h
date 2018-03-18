@@ -16,7 +16,12 @@
 #include <stdlib.h>
 #include <errno.h>
 
-void dns_query (void);
 
+
+int dns_query (void);
+int web_server_id(void);
+int raw_socket_dump(void);
+int stream_socket_dump(void);
+void memdump(const unsigned char *data, const unsigned int length);
 
 #endif /* CONTROLLER_DNS_H_ */
